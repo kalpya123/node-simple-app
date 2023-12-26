@@ -18,7 +18,7 @@ jobs:
         password: ${{secrets.DOCKER_TOKEN}}
 
     - name: Build Docker image
-      run: docker build -t kalpesh1999/simple-express-app:1.0 .
+      run: docker build -t kalpesh1999/simple-express-app:${{ env.DOCKER_TAG_NAME }} .
 
     - name: Push Docker image to Docker Hub
-      run: docker push kalpesh1999/simple-express-app:1.0
+      run: docker push kalpesh1999/simple-express-app:${{ env.DOCKER_TAG_NAME }}
