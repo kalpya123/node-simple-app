@@ -10,7 +10,7 @@ app.get('/Docker', function (req, res) {
 })
 
 function generateRandomName() {
-    // Create an array of first names
+    // Create an array of first names hgd
     const firstNames = ["Alice", "Bob", "Carol"];
   
     // Create an array of last names
